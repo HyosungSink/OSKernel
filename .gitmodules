@@ -9,6 +9,7 @@
 	path = testsuits-for-oskernel
 	url = https://github.com/HyosungSink/testsuits-for-oskernel.git
 	branch = pre-2025
+	ignore = untracked
 [submodule "os-contest-image"]
 	path = os-contest-image
 	url = https://github.com/HyosungSink/os-contest-image.git

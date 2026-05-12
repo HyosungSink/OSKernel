@@ -9,6 +9,8 @@ disk-la.img
 sdcard-rv.img*
 sdcard-la.img*
 os_serial_out_*.txt
+autotest-run-*.log
+.last-autotest-log
 starry-next/.cargo/
 starry-next/.axconfig.*
 starry-next/*.elf
