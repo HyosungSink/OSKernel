@@ -1,0 +1,14 @@
+[submodule "starry-next"]
+	path = starry-next
+	url = https://github.com/HyosungSink/starry-next.git
+	branch = pre2025test
+[submodule "autotest-for-oskernel"]
+	path = autotest-for-oskernel
+	url = https://github.com/HyosungSink/autotest-for-oskernel.git
+[submodule "testsuits-for-oskernel"]
+	path = testsuits-for-oskernel
+	url = https://github.com/HyosungSink/testsuits-for-oskernel.git
+	branch = pre-2025
+[submodule "os-contest-image"]
+	path = os-contest-image
+	url = https://github.com/HyosungSink/os-contest-image.git
