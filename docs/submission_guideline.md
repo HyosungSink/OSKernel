@@ -105,15 +105,3 @@ Copyright (c) 2003-2024 Fabrice Bellard and the QEMU Project developers
 1. 未将所需第三方包提交到项目中，导致编译时在线下载依赖耗时过长。
 2. 系统运行结束后没有及时关闭 QEMU。
 3. 提交代码存在 BUG，导致运行速度过慢。
-
-## 6. 评测环境说明
-
-- Dockerfile 和相关工具链：
-  - https://github.com/zhouzhouyi-hub/os-contest-image/
-- 镜像下载命令：
-  - `docker pull zhouzhouyi/os-contest:20260104`
-
-## 7. 测试用例与说明
-
-- 测试用例下载地址：
-  - https://github.com/oscomp/testsuits-for-oskernel/blob/pre-2025/
