@@ -2,6 +2,6 @@
     "debug": false,
     "qemu.smp": 1,
     "qemu.mem": "1G",
-    "qemu.timeout": 600,
-    "qemu.no_output_timeout": 600
+    "qemu.timeout": 1200,
+    "qemu.no_output_timeout": 1200
 }

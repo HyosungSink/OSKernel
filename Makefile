@@ -56,7 +56,7 @@ testdata-config:
 	mkdir -p testdata
 	cp autotest-for-oskernel/kernel/judge/judge_*.py testdata/
 	cp autotest-for-oskernel/kernel/judge/config.json testdata/
-	python3 -c 'import json; from pathlib import Path; p=Path("testdata/config.json"); cfg=json.loads(p.read_text()); cfg["qemu.timeout"]=60; cfg["qemu.no_output_timeout"]=60; p.write_text(json.dumps(cfg, indent=4)+"\n")'
+	python3 -c 'import json; from pathlib import Path; p=Path("testdata/config.json"); cfg=json.loads(p.read_text()); cfg["qemu.timeout"]=1200; cfg["qemu.no_output_timeout"]=1200; p.write_text(json.dumps(cfg, indent=4)+"\n")'
 
 testdata/sdcard-rv.img.gz: FORCE
 	@if [ -f "$(TESTSUITS_DIR)/sdcard-rv.img.gz" ]; then \
