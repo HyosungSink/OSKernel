@@ -31,12 +31,12 @@ loongarch_musl_alias:
 	fi
 
 build-rv: starry_cargo_config
-	$(MAKE) -j$(JOBS) -C $(STARRY_DIR) PWD=$(STARRY_DIR) test_build ARCH=riscv64 AX_TESTCASE=oscomp BUS=mmio FEATURES=lwext4_rs
+	$(MAKE) -j$(JOBS) -C $(STARRY_DIR) PWD=$(STARRY_DIR) test_build ARCH=riscv64 AX_TESTCASE=oscomp BUS=mmio FEATURES=lwext4_rs,sched_rr APP_FEATURES=lwext4_rs
 	cp $(STARRY_BIN_RV) kernel-rv
 	rm -f $(STARRY_DIR)/kernel-rv
 
 build-la: starry_cargo_config loongarch_musl_alias
-	$(MAKE) -j$(JOBS) -C $(STARRY_DIR) PWD=$(STARRY_DIR) test_build ARCH=loongarch64 AX_TESTCASE=oscomp FEATURES=lwext4_rs
+	$(MAKE) -j$(JOBS) -C $(STARRY_DIR) PWD=$(STARRY_DIR) test_build ARCH=loongarch64 AX_TESTCASE=oscomp FEATURES=lwext4_rs,sched_rr APP_FEATURES=lwext4_rs
 	cp $(STARRY_ELF_LA) kernel-la
 	rm -f $(STARRY_DIR)/kernel-la
 
